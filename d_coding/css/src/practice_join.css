@@ -1,0 +1,66 @@
+/* css/src/practice_join.css */
+
+#wrap {
+  width:100%; height:auto;
+  background-color: #fff;
+}
+
+h1{
+  width:100%; height: auto;
+  padding:50px; box-sizing:border-box;
+  background-image: url(../../img/join/join_001/eformsign_logo.png);
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+form{
+  width:750px; height:798px;
+  margin:auto;
+}
+
+fieldset {
+  position:relative;
+  width:100%; height:auto;
+  border:0;
+}
+
+fieldset input,
+fieldset select{
+  width:686px; height: 56px;
+  margin-bottom:12px;
+}
+
+fieldset > div > label {
+  position:absolute;
+  width:56px; height: 56px;
+  border:1px #333;
+}
+
+.material-icons-outlined {
+  width: 56px; height: 56px;
+}
+
+dt{
+  display: block;
+  width:686px; height:auto;
+  margin-bottom: 40px;
+
+}
+
+.link {
+  color:#0e73c3; font-weight: 600;
+
+}
+
+.submit_button {
+  width:686px; height:68px;
+  text-align: center; color:#fff;
+  font-weight: 500; font-size: 20px;
+  line-height: 68px;
+  background-color:#0e73c3;
+}

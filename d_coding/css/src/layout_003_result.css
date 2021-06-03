@@ -1,0 +1,238 @@
+/* css/src/layout_003_result.css */
+
+/* common */
+
+
+
+/* I.R 기법이란? image replace 기법의 약자로
+  - 해당하는 요소에 이미지로 글자를 대처하여 사용하는 기법
+  - 필요한 내용이지만 눈에 보이지 않게 처리하는 방법
+*/
+
+/* ---------------------- */
+
+#wrap {
+  width: 95%; min-width:1600px; height: auto;
+  min-height: 500px;
+  margin:auto;
+}
+
+#wrap > div {
+  width:100%;
+}
+
+/* #headBox ================== */
+#headBox {
+  position:relative; z-index:0;
+  height:150px;
+  padding: 34px 50px 0; box-sizing:border-box;
+  background-color: rgba(115,139,32,0.2);
+}
+
+h1 {
+  float: left;
+  width: 250px; height: 80px;
+  margin-right:75px;
+  background-color:#7cf;
+}
+
+.global_nav {
+  position: absolute;
+  top:34px; left:0; right:0; margin:auto;
+  width:850px; height: auto; min-height: 80px;
+  padding:5px 10px; box-sizing: border-box;
+  background-color:#59f;
+}
+
+.global_nav ul {
+  width:100%; height:auto;
+}
+
+.global_nav li {
+  width:150px; height:70px;
+  margin-left:20px;
+  background-color: #fc0;
+}
+
+.global_nav a {
+  display:block;
+  width: 100%; height: 100%;
+  text-align:center;
+  text-transform:uppercase;
+  line-height: 70px;
+}
+
+/* ----------- */
+.user_nav {
+  float:right;
+  width:250px; height:80px;
+  background-color:#7cf;
+}
+
+/* #adViewBox ================== */
+#adViewBox {
+position: relative;
+height:750px;
+padding-top:28px; box-sizing:border-box;
+background-color:rgba(244,85,168,0.2);
+}
+.view_indicator {
+  position:absolute;
+  bottom:28px; left:0; right:0;
+  width:850px; height:auto;
+  margin:auto;
+  padding:10px; box-sizing:border-box;
+  background-color:#47a;
+}
+.view_indicator ul {
+  width:100%; height:auto;
+}
+.view_indicator li {
+  width: auto; height: auto;
+  margin-left: 20px;
+}
+
+.view_indicator a {
+  display:block;
+  width:120px; height:40px;
+  border-radius: 30px;
+  background-color: #fc0;
+}
+
+.view_indicator a:focus,
+.action a {
+  /* width:200px; */
+  background-color: #afa;
+}
+
+
+
+.view_outer {
+  width: 1300px; height:600px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+a { display: inline-block; background-color: #afa;}
+
+/* #localNavBox ================== */
+#localNavBox {
+height:250px;
+padding:18px 50px; box-sizing:border-box;
+margin-bottom: 50px;
+background-color: rgba(175,16,208,0.2); 
+}
+
+.local_nav_outer {
+  width:100%; max-width: 1600px; height: 196px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+/* ========================================== */
+.issue_content_wrap,
+.community_wrap {
+  width: 100%; height: auto;
+}
+/* #popularContentBox ================== */
+#popularContentBox {
+height:600px;
+background-color:rgba(190,215,40,0.2);
+}
+
+h3 {
+  width:1300px; height: 50px;
+  margin: auto; margin-bottom: 30px;
+  background-color: #57a; 
+}
+
+.container {
+  /* min-width, max-width 쓰기 전 반드시 width:가변값; 을 쓰자 */
+  /* min-height, max-height 쓰기 전 반드시 height:가변값; 을 쓰자 */
+  width:1300px; height:auto; min-height:300px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+
+.pop_con_area {
+  width:1300px; height: 470px;
+  margin: auto;
+  background-color: #7cf;
+}
+
+/* #newContentBox ================== */
+#newContentBox {
+height:900px;
+padding:60px; box-sizing:border-box;
+margin-bottom:80px;
+background-color:rgba(199,7,5,0.2);
+}
+
+.new_con_area {
+  width: 1300px; height:700px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+/* #recommendedContentBox ================== */
+#recommendedContentBox {
+height:auto; min-height:800px;
+margin-bottom:80px;
+padding-top:30px; box-sizing:border-box;
+background-color:rgba(56,8,87,0.2);
+}
+
+.recom_con_area{
+  min-height:440px;
+}
+
+/* div {} == .recom_con_area {} == .container {} == div.recom_con_area {} == div.container {} == div.recom_con_area.container {} */
+
+
+/* #communityBox ================== */
+#communityBox {
+height:auto; min-height: 800px;
+padding-top:60px; box-sizing: border-box;
+background-color:rgba(128,67,241,0.2);
+}
+
+/* #miniAdBox ================== */
+#miniAdBox {
+  height:auto; min-height: 400px;
+  margin-bottom: 80px;
+  padding:40px; box-sizing:border-box;
+  background-color: rgba(51,42,228,0.2);
+}
+
+.mini_ad_outer {
+  width:100%; max-width: 1500px; height:300px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+/* #footBox ================== */
+#footBox {
+height:auto;
+padding-top:22px 0;
+background-color:rgba(245,150,137,0.2);
+}
+.foot_con_area {
+  width: 1300px; height: 140px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+
+
+
+/* CSS 속성 작성 순서
+* display : block, inline, inline-block, none
+* position, top, left, right, bottom, z-index
+* width - height
+* margin - padding - border - box-sizing
+* font
+* background
+* effect
+* etc
+*/

@@ -1,0 +1,44 @@
+/* ../part/gcass_main/sideBox.css */
+
+#sideBox {
+  position:absolute; top:0; left:0;
+  width: 100%; height: 30px;
+  background-color: #757575;
+  background-color: var(--color-gray3);
+}
+
+#sideBox > ul {
+  float:right;
+  width:auto; height: 30px;
+  background-color: #dfdfdf;
+}
+
+#sideBox > ul > li {
+  float:left;
+  width:95px; height: 30px;
+  padding:0 4px; box-sizing: border-box;
+}
+
+#sideBox > ul > li:nth-child(2) {
+  background-color: #555;
+  background-color: var(--color-gray4);
+}
+
+#sideBox > ul > li:last-child {
+  width:250px;
+  background-color: #fff30d;;
+  background-color: var(--color-yellow1);
+}
+
+#sideBox > ul > li {
+  background-image: url("../../../img/gcass/sideBox.png");
+  background-repeat:no-repeat;
+  background-position: 0 0;
+}
+
+#sideBox > ul > li:nth-child(2) {
+  background-position-x: -95px;
+}
+#sideBox > ul > li:nth-child(3) {
+  background-position-x: 100%;
+}

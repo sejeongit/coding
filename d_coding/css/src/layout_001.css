@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* 현재 파일명: css/src/layout_001.css */
+
+/* reset.css */
+html, body {
+  margin:0; }
+
+/* design.css */
+
+#wrap {
+  width:600px; height:auto;
+  margin:auto;}
+
+/* #header ======================== */
+#header{
+  width:100%; height:100px;
+  background-color:#f07;
+}
+
+/* #section ======================= */
+#section{
+  /* overflow:auto; */
+  width:100%; height:auto;
+  background-color:#fa0;
+}
+
+.sect_01 {
+  float:left;
+  width:40%; height:300px;
+  background-color: #329664;
+}
+.sect_02 {
+  float:left;
+  width:60%; height:300px;
+  background-color:#555555 ;
+}
+
+/* .horizontal { margin: 0; padding: 0; border: 0;
+clear:both;
+} */
+
+#section:after,
+#section::after {
+  content: " ";
+  display:block;
+  width:100%; height:0;
+  clear:both;
+}
+
+/* #footer ======================== */
+#footer{
+  width:100%; height:100px;
+  background-color:#03f;
+}
+
+
+
+
+/**
+* CSS에서
+width:auto -> 가로크기 100% - 부모의 크기를 따른다
+height:auto -> 자식요소의 크기만큼 - 자식의 크기를 따른다
+
+float: left | right;
+블럭 요소를 가로로 배치하기 위해 float을 사용했다면, 사용하려는 요소의
+형제 요소 모두 float을 사용해라!
+
+float을 사용하면 해당요소는 띄워주는 역할을 해서 부모 요소의 높이 값이
+auto일 경우 실제 부모 요소의 높이는 0이 된다.
+이를 해결하기 위해 float 처리된 요소의 형제 요소 중 마지막 요소에
+clear 속성을 부여하면 해결이 된다.
+단, clear 속성은 반드시 block 요소여야 한다.
+*/

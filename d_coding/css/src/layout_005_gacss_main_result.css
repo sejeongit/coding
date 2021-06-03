@@ -1,0 +1,7 @@
+/* css/src/layout_005_gacss_main_result.css */
+
+@import url(../part/gcass_main/gcassWrap.css);
+@import url(../part/gcass_main/headBox.css);
+@import url(../part/gcass_main/viewBox.css);
+@import url(../part/gcass_main/sideBox.css);
+@import url(../part/gcass_main/footBox.css);

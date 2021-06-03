@@ -1,0 +1,76 @@
+/* layout_003.css */
+
+#wrap {
+  width: 1600px; height: auto;
+  margin:auto;
+  background-color: transparent;
+}
+
+#head_box {
+  width: auto; height: 150px;
+  background-color: #999;
+  padding-left:50px; padding-right:50px; box-sizing:border-box;
+}
+
+.logo { 
+  float:left;
+  width:250px; height:80px;
+  margin-right:75px;
+  background-color: #fff; }
+
+.navigation {
+  float:left;
+  width:850px; height:80px;
+  margin-right:75px;
+  background-color: #fff;}
+
+.usernav {
+    float:left;
+    width:250px; height:80px;
+    background-color: #fff;
+  }
+
+#adview_box {
+  width: auto; height: 750px;
+  background-color: #888;
+}
+
+#localnav_box {
+  width: auto; height: 250px;
+  background-color: #777;
+  margin-bottom:50px;
+}
+
+#popularcontent_box {
+  width: auto; height: 600px;
+  background-color: #666;
+}
+
+#newcontent_box {
+  width: auto; height: 900px;
+  background-color: #555;
+  margin-bottom:80px;
+}
+
+#recommendedcontent_box {
+  width: auto; height: 600px;
+  background-color: #444;
+  margin-bottom:80px;
+}
+
+#community_box {
+  width: auto; height: 800px;
+  background-color: #333;
+  margin-bottom:80px;
+}
+
+#miniad_box {
+  width: auto; height: 400px;
+  background-color: #222;
+  margin-bottom:80px;
+}
+
+#foot_box {
+  width: auto; height: 200px;
+  background-color: #111;
+}

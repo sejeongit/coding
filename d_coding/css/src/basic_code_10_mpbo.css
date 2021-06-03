@@ -1,0 +1,191 @@
+/* css/src/basic_code_10_mpbo.css */
+
+
+#wrap {
+  width: 1000px; height: auto;
+  margin:auto;
+  padding-bottom:500px;
+  background-color: #ddd;
+}
+
+h1 {
+  width:100%; height: auto;
+  background-color: #ccf;
+  text-align:center; font-size:1.3rem;
+}
+
+h2 {
+  width: 80%; height: auto;
+  margin:auto;
+  border-bottom:1px solid #333;
+}
+
+.part {
+  width: 98%; height: auto;
+  margin: auto;
+  border:1px solid #333;
+  background-color: #fff;
+}
+
+h3 {
+  background-color:#ddd;
+}
+
+ul {
+  width: 100%; height:auto;
+  background-color:#fcc;
+}
+li {
+  float: left;
+  width: 100px; height: 100px;
+  background-color: #0cf;
+  background-image: linear-gradient(45deg, #0cf, #05c);
+  color:#fff; font-weight:900;
+}
+li > a {
+  display:block;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+  /* ---------------------------------------------- */
+  /* margin */
+
+  .margin > li:nth-child(1) { margin:10px; }
+  .margin > li:nth-child(2) { margin:20px 40px; }
+  .margin > li:nth-child(3) { margin:10px 30px 50px; }
+  .margin > li:nth-child(4) { margin:10px 20px 30px 40px; }
+
+  .margin2 > li:nth-child(1) { margin-top:20px; margin-left:20px;}
+  .margin2 > li:nth-child(2) { margin-left:10px; margin-right:30px;}
+  .margin2 > li:nth-child(3) {
+    /* margin-left:30px; margin-top:10px; margin-right:10px; margin-bottom:10px; */
+    /* margin:10px 10px 10px 30px; */
+    margin-left:30px; margin:10px;
+  }
+
+  .margin2 > li:nth-child(4) {
+    margin:20px; margin-top:5px; margin-right:10px;
+  }
+
+
+
+  /* margin
+    - margin은 공간 여백을 주는 속성
+    - margin:10px; -> 위/오른/아래/왼 모두 10px만큼 공간
+    - margin:20px 40px -> 위/아래 20px, 좌/우 40px
+    - margin:10px 30px 50px -> 위 10px, 좌/우 30px, 아래 50px
+    - margin:10px 20px 30px 40px -> 시계방향으로 위에서부터 순서대로
+    
+    - 단, margin 중 top부분은 float이 아니라면 부모요소를 끌고 내려온다.
+    - float을 적용한 상태에서는 margin이 겹치면 둘 모두 활성화
+    - float이 없는 기본 상태에서는 큰값만 적용
+  */
+
+  /* ---------------------------------------------------------- */
+  /* padding */
+  .padding > li:nth-child(1) { padding:10px; }
+  .padding > li:nth-child(2) { padding:20px 40px; }
+  .padding > li:nth-child(3) { padding:20px 40px 80px; }
+  .padding > li:nth-child(4) { padding:10px 20px 30px 40px; }
+  .padding > li:nth-child(5) { padding:20px; padding-left:40px; }
+  .padding > li:nth-child(6) { padding:20px; box-sizing:content-box; }
+  .padding > li:nth-child(7) { padding:20px; box-sizing:border-box; }
+
+
+
+  /* .padding > li > a {background-color:transparent;} */
+  /* padding
+    - padding은 공간의 면적이 늘어나는 것
+    - 기본 값은 margin의 개념과 똑같다.
+    - 단, padding:auto;는 없는 기능
+  */
+
+  /* ------------------------------------------------- */
+  .border > li:nth-child(1) {
+    border-width:10px;
+    border-style:solid; /* dashed dotted double */
+    border-color:#c0f;
+  }
+
+  .border > li:nth-child(2) {
+    border:10px solid #cfa;
+  }
+
+  .border > li:nth-child(3) {
+    border-top:10px solid #77a;
+    border-right:20px solid #ff5;
+  }
+
+  .border > li:nth-child(4) {
+    border:10px solid #cf9;
+    border-top-width: 5px;
+    border-bottom-color:#333;
+    border-left-style:dotted;
+  }
+
+  .border > li:nth-child(5) {
+    width:0; height:0;
+    border:30px solid #fff;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    background-color:transparent;
+    background-image:none;
+    overflow:hidden;
+  }
+
+  .border > li:nth-child(6) {
+    width:100px; height:100px;
+    border:5px solid #ff5;
+    box-sizing:border-box;
+  }
+
+  /* outline */
+  .outline > li:nth-child(1) {
+    outline-width:20px;
+    outline-style:solid;
+    outline-color:aquamarine;
+  }
+
+  .outline > li:nth-child(2) {
+    outline:5px dotted #fa0;
+    border-radius:20px;
+    /* border:5px solid #333; */
+    /* outline-top-width:0;
+    outline-right-color:#000;
+    outline-bottom-style:double; */
+  }
+
+  .outline > li:nth-child(3) {
+    outline:3px solid #fff;
+    outline-offset:-1rem;
+  }
+
+  /* ---------------------------------- */
+  .outline2 > li {
+    margin-right:10px; padding:10px; box-sizing: border-box;
+    border-radius:15px;
+    text-align: center; line-height: 80px;
+  }
+  .outline2 > li > a:focus { 
+    background-color: rgba(50,50,50,0.7);
+    outline:10px solid #fff;
+    color:#fff;
+  }
+
+  /* outline 
+    - outline은 margin,padding,border와 다르게 부피가 없다.
+    - 눈에 보이는 형태는 크기를 가지지만, 다른 주변의 요소들에게는 영향을 미치지 않는다.
+    - outline은 형태는 존재하지만 부피는 존재하지 않기에, 안개같은 형상
+    - outline은 layout구성에서 사용하지는 않는다.
+    - 접근성의 용도로 주로 사용한다. (focus를 잡는 용도)
+    - outline은 오로지 4면을 모두 사용하게 되는 형태(부분은 사용할 수 없다.)
+    */
+
+    /* focus 처리
+    - 특수하게 tabindex 속성을 사용하지 않는다면
+    - 기본은 모두 a요소 또는 form의 내부요소들이 focus 처리가 가능
+    - form 내부 focus 요소: input, button, textarea, select
+    */

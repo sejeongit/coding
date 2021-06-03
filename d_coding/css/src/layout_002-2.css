@@ -1,0 +1,209 @@
+/* layout_002.css */
+/* reset.css */
+
+/* html,body,
+h1,h2,h3,h4,h5,h6,
+div,ul,ol,li,dl,dt,dd {
+  margin:0; padding:0; border:0; outline:0; }
+  ul,ol,li {list-style: none;} */
+
+/* common.css */
+/* .clearfix:after,
+.clearfix::after {
+  content:""; display:block; width:100%; height: 0; clear:both;
+}
+*/
+
+/* ---------------- */
+#wrap {
+  width:600px; height:auto;
+  margin:auto;
+  background-color:#ccc;
+}
+
+/* #header ----------------------------- */
+#header {
+  width:100%;
+  /* width:calc(100% - 40px); */
+  height:auto;
+  padding:20px;
+  padding-top:30px;
+  box-sizing:border-box;
+  background-color:#f06;
+}
+
+.logo {
+  float:left;
+  width:120px; height: 50px;
+  background-color:#ccc;
+}
+
+.logo > a {
+  display:block;
+  width:100%; height:100%;
+  background-color:#add;
+}
+
+.navigation {
+  float:right;
+  width:400px; height:auto;
+  padding-top:10px;
+  background-color: #fc0;
+}
+
+.navigation ul {
+  width: 100%; height:auto;
+}
+
+.navigation li {
+  float:left;
+  width:50px; height:40px;
+  margin-right:20px;
+  /* padding:10px; box-sizing: border-box; */
+  background-image:linear-gradient(45deg, #79a, #57f);
+}
+
+.navigation li:last-child {margin-right:0}
+
+.navigation li > a {
+  display:block;
+  width:100%; height:100%;
+  background-color:rgba(100,100,100,0.3);
+  /* background-color:#fff;
+  opacity:0.5; */
+}
+
+
+/* #section ----------------------------- */
+#section {
+  width:100%; height:auto;
+  margin-top:50px; margin-bottom: 50px;
+
+}
+
+/* 
+- float을 사용하면 float을 감싸고 있는 부모요소의 높이 값이 auto일 경우에 실제 높이는 0로 처리가 됨
+- 이에 float을 사용하는 형태의 요소들 중 마지막 요소는 float을 사용하지 않고 clear:both를 사용한다.
+- clear:both는 반드시 형태를 가지고 있어야 하며, 내용상 요소로 담을 수 없는 경우에는 가상의 요소로 처리하게 한다.
+- 이때 발생시키는 가상의 요소는 ::after이다.
+- ::after의 속성에는 반드시 content:""; 속성을 꼭꼭꼭 입력해야한다.
+*/
+
+/* 선택자 내부의 끝에 이유불문 가상으로 태그 붙이기 */
+
+
+#section > div {
+  height:150px;
+  /* height:260px; */
+  padding:20px; box-sizing:border-box;
+}
+
+  .sect_01 {
+    float:left;
+    width:30%;
+    /* width:calc(40% - 40px); */
+    background-color:#7a7;
+    margin-left:23px;
+  }
+  .sect_02 {
+    float:right;
+    width:60%;
+    /* width:calc(60% - 40px); */
+    background-color:#777;
+    margin-right:23px;
+  }
+
+/* aside ------------------------------ */
+#aside {
+  width:100%; height:auto;
+}
+
+#aside > div {
+  float:left;
+  height: 120px;
+  padding:20px; box-sizing:border-box;
+  margin-top:10px; margin-bottom: 60px;
+   
+}
+
+  .side_01 {
+    width:27%;
+    background-color: #c9a;
+    margin-left:23px;
+  }
+  .side_02 {
+    width:27%;
+    background-color: #5a5;
+    margin-left:23px; margin-right:23px;
+  }
+  .side_03 {
+    width:27%;
+    background-color: #a7c;
+    margin-right: 23px;
+  }
+
+
+
+/* #article ----------------------------- */
+#article {
+  width:100%; height:auto;
+  margin-top:10px; margin-bottom: 60px;
+}
+#article > div { float:left; }
+  .art_01 {
+    width: 27%; height: 300px;
+    background-color: #557;
+    margin-left: 23px;
+  }
+
+  .art_02 {
+    width: 60%; height: 150px;
+    background-color: #c33;
+    margin-left:20px;
+  }
+
+  .art_03 {
+    width: 60%; height: 150px;
+    background-color: #77a;
+    margin-left:20px;
+    margin-right: 23px;
+  }
+
+/* #content ----------------------- */
+#content {
+  width:100%; height: auto;
+  background-color: #ddd;
+
+  
+}  
+#content > div { float:left; width:60%;
+  padding:20px; box-sizing:border-box; }
+
+
+#content > .art_01 {
+  float:right;
+  width:30%; height: 500px;
+  background-color: #557;
+  margin-right:23px;
+  margin-top:50px;
+  margin-bottom:60px;
+}
+
+#content > .art_02{
+  width: 55%; height: 150px;
+    background-color: #c33;
+    margin-left:20px;
+    margin-top:50px;
+  }
+
+#content > .art_03 { 
+  width: 55%; height: 350px;
+  background-color: #77a;
+  margin-left:20px;
+  margin-bottom:60px; }
+
+/* #footer ----------------------------- */
+#footer {
+  width:100%; height:100px;
+  background-color: #0af;
+}
