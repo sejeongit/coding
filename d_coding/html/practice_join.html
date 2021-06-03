@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- html/practice_join.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/practice_join.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><span class="blind">eformsign</span></h1>
+    <p>회원가입</p>
+
+    <form action="#" method="POST">
+      <fieldset>
+        <legend><span class="blind">회원가입</span></legend>
+        <div class="part_01">
+
+            <span class="material-icons-outlined">email</span>
+            <input type="email" name="textEmail" id="textEmail" value=""
+            placeholder="이메일" required />
+            <label for="textEmail">
+              <span class="blind">이메일을 입력하세요.</span>
+            </label>
+
+            <input type="text" name="textName" id="textName" value=""
+            placeholder="이름" required />
+            <label for="textName">
+              <span class="blind">이름을 입력하세요.</span>
+            </label>
+
+            <input type="password" name="textPw" id="textPw" value=""
+            placeholder="비밀번호" required />
+            <label for="textPw">
+              <span class="blind">비밀번호를 입력하세요.</span>
+            </label>
+
+            <input type="password" name="textPw" id="textPw" value=""
+            placeholder="비밀번호 확인" required />
+            <label for="textPw">
+              <span class="blind">비밀번호를 입력하세요.</span>
+            </label>
+
+          </div>
+          <hr />
+        <div class="part_02">
+
+            <input type="text" name="textCompanyName" id="textCompanyName" value=""
+            placeholder="회사 이름" required />
+            <label for="textCompanyName">
+              <span class="blind">회사 이름을 입력하세요.</span>
+            </label>
+
+            <label for="selectContry">
+              <span class="blind">국적을 선택하세요.</span>
+            </label>
+            <select class="input" name="selectContry" id="selectContry">
+              <option value="south korea(대한민국)">south korea(대한민국)</option>
+              <option value="us">united states</option>
+              <option value="uk">united kingdom</option>
+              <option value="germany">germany</option>
+              <option value="spain">spain</option>
+            </select>
+
+          </div>
+      </fieldset>
+      
+      <dl>
+        <dt>아래 [동의하고 가입하기] 버튼을 클릭하면,
+          <a class="link" href="#">이용약관</a> 및
+          <a class="link" href="#">개인정보 취급방침</a>에
+          동의하게 됩니다.
+        </dt>
+        <dd>
+          <button class="submit_button" type="submit">동의하고 가입하기</button>
+        </dd>
+      </dl>
+    </form>
+
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/practice_join.js"></script> -->
+</body>
+</html>

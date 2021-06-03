@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- html/login_page_practice.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/login_page_practice.css">
+
+  <title>웹 기초</title>
+  
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1 class="blind">login_page</h1>
+
+    <div class="part_up">
+      <h2 class="blind">part_up</h2>
+      <dl>
+        <dt>Don't you have account?</dt>
+        <dd><a href="#">sign up</a></dd>
+      </dl>
+      <p class="welcome">welcome</p>
+    <div>
+
+    <div class="part_down">
+      <h2 class="blind">part_down</h2>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend><span class="blind">login_text</span></legend>
+          <ul>
+            <li>
+              <label for="textName"></label>
+              <input class="textInput" type="text" id="textName" name="textName" value="" maxlength="15"
+              placeholder="Username" required />
+            </li>
+            <li>
+              <label for="textPassword"></label>
+              <input class="textInput" type="text" id="textPassword" name="textPassword" value="" maxlength="25"
+              placeholder="Password" required />
+            </li>
+            <li>
+              <button class="login_button" type="submit" class="login_button">login</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div class="paragraph">
+        <p class="forgot"><a href="#">Forgot your Password?</a></p>
+        <p class="freepik">designed by freepik</p>
+      </div>
+    </div>
+
+
+  </div>
+  
+  <!-- script -->
+  <!-- <script src="../js/src/login_page_practice.js"></script> -->
+</body>
+</html>

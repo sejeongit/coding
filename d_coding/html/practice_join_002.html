@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- html/practice_join_002.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+    
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/practice_join_002.css">
+  
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="https://www.naver.com/"><span class="blind">naver</span></a></h1>
+    <article id="joinBox">
+        <h2 class="blind">회원가입</h2>
+
+        <form action="" method="post">
+          <fieldset class="id_pw">
+            <legend><span class="blind">id, pw 입력</span></legend>
+            <ul class="text_id_pw">
+              <li>
+                <input type="text" id="textId" name="textId" value="" required />
+                <label for="textId">아이디<span class="blind">를 입력하세요.</span></label>
+              </li>
+              <li>
+                <input type="password" id="textPw" name="textPw" value="" required />
+                <label for="textPw">비밀번호<span class="blind">를 입력하세요.</span></label>
+              </li>
+              <li>
+                <input type="password" id="textPwRe" name="textPwRe" value="" required />
+                <label for="textPwRe">비밀번호<span class="blind">를 한번 더 입력하세요.</span></label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="personal_information">
+            <legend><span class="blind">개인정보 입력</span></legend>
+            <ul>
+              <li>
+                <input type="text" id="textName" name="textName" value="" required />
+                <label for="textName">이름을 입력하세요.</label>
+              </li>
+              <li>
+                <input type="text" id="textDateYear" name="textDateYear" value="" required
+                placeholder="년(4자)" />
+                <label for="textDateYear">생년을 입력하세요.</label>
+              </li>
+              <li>
+                <select name="textDateMonth" id="textDateMonth">
+                  <option>월</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <label for="textDateMonth">생월을 입력하세요.</label>
+              </li>
+              <li>
+                <input type="text" id="textDateDay" name="textDateDay" value="" required
+                placeholder="일" />
+                <label for="textDateDay">생일을 입력하세요.</label>
+              </li>
+              <li>
+                <select name="textGender" id="textGender">
+                  <option>성별</option>
+                  <option value="남자">남자</option>
+                  <option value="여자">여자</option>
+                  <option value="선택안함">선택안함</option>
+                </select>
+              </li>
+              <li>
+                <input type="email" id="textEmail" name="textEmail" value="" required
+                placeholder="선택입력" />
+                <label for="textEmail">이메일을 입력하세요.</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="phone_number">
+            <legend><span class="blind">휴대전화 입력</span></legend>
+            <li>
+              <select name="textCountry" id="textCountry">
+                <option value="대한민국 +82">대한민국 +82</option>
+                <option value="네팔 +977">네팔 +977</option>
+                <option value="노르웨이 +47">노르웨이 +47</option>
+                <option value="그리스 +30">그리스 +30</option>
+                <option value="뉴질랜드 +64">뉴질랜드 +64</option>
+              </select>
+            </li>
+            <li>
+              <input type="tel" id="textTel" name="textTel" value="" required
+              placeholder="전화번호 입력" />
+              <label for="textTel">전화번호를 입력하세요.</label>
+              <button type="button">인증번호 받기</button>
+            </li>
+            <li>
+              <input type="text" id="textVC" name="textVC" value="" required
+              placeholder="인증번호 입력하세요" />
+              <label for="textVC">인증번호를 입력하세요.</label>
+            </li>
+          </fieldset>
+          <li>
+            <button type="button">가입하기</button>
+          </li>
+        </form>
+    </article>
+  </div>
+
+  <!-- script -->
+  <!-- <script src="../js/src/practice_join_002.js"></script> -->
+</body>
+</html>

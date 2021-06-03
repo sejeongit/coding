@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- html/basic_code_21_form.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/basic_code_21_form.css">
+  
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./all_contents.html">웹표준</a></h1>
+    <hr />
+    <h2>form 기능 이해하기</h2>
+
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>form 영역에 따른 제목</legend>
+        <label for="userId">아이디를 입력하세요</label>
+        <input type="text" id="userId" name="sendName" value="" />
+        <br />
+        <label for="userPw">비밀번호를 입력하세요.</label>
+        <input type="password" id="userPw" name="sendPw" value="" />
+
+        <!-- input
+            type속성: hidden, text, password
+        -->
+      </fieldset>
+
+      <fieldset class="input_type">
+        <legend>입력</legend>
+        <ul>
+          <li>
+            <label for="textName">내용을 입력하세요.</label>
+            <input type="text" name="textName" id="textName" value="" maxlength="10"
+                   placeholder="아이디" required />
+          </li>
+          <li>
+            <label for="textPassword">비밀번호 입력하세요.</label>
+            <input type="password" name="textPassword" id="textPassword" value=""
+                   placeholder="비밀번호" required />
+          </li>
+          <li>
+            <!-- <label for=""></label> -->
+            <input type="hidden" name="hiddenName" value="value_insert" />
+          </li>
+          <li>
+            <label for="textSearch">검색어를 입력하세요.</label>
+            <input type="search" name="textSearch" value="" id="textSearch" required />
+          </li>
+          <!-- html5 -->
+          <li>
+            <label for="textUrl">홈페이지 주소입력</label>
+            <input type="url" name="textUrl" id="textUrl" value="" required />
+          </li>
+          <li>
+            <label for="textEmail">이메일 입력</label>
+            <input type="email" name="textEmail" id="textEmail" value="" required />
+          </li>
+          <li>
+            <label for="textTel">연락처 입력</label>
+            <input type="tel" name="textTel" id="textTel" value="" required />
+          </li>
+          <li>
+            <!-- html5 추가되었지만 아직은... 시간, 색상 표기는 모두 사용하기 애매하다 -->
+          </li>
+          <li>
+            <label for="selectColor">색상을 선택하세요.</label>
+            <input type="color" name="selectColor" id="selectColor" value="" />
+          </li>
+          <li>
+            <label for="myDate">예약날짜를 선택하세요.</label>
+            <input type="date" name="myDate" id="myDate" value="" />
+          </li>
+          <li>
+            <label for="datetime">원하는 시간을 입력하세요.</label>
+            <input type="time" name="datetime" id="datetime" value="" />
+          </li>
+        </ul>
+
+        <!-- <input type="submit" value="확인" /> -->
+      </fieldset>
+
+      <fieldset class="radio_type">
+        <legend>체크 - radio</legend>
+        <p>당신의 성별을 선택하세요.</p>
+        <ul>
+          <li>
+            <input type="radio" id="male" name="gender" value="남성" />
+            <label for="male">남성</label>
+          </li>
+          <li>
+            <input type="radio" id="female" name="gender" value="여성" />
+            <label for="female">여성</label>
+          </li>
+          <li>
+            <input type="radio" id="dual" name="gender" value="양성" />
+            <label for="dual">양성</label>
+          </li>
+          <li>
+            <input type="radio" id="none" name="gender" value="무성" />
+            <label for="dual">무성</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>체크 - checkbox</legend>
+        <p>저녁에 먹을 음식을 고르시오.</p>
+        <!-- 
+          radio -> selectName = value1
+          checkbox -> selectName = [value1, value2, value3]
+        -->
+        <ul>
+          <li>
+            <input type="checkbox" id="food_01" name="dinnerSelect" value="삼겹살" />
+            <label for="food_01">삼겹살</label>
+          </li>
+          <li>
+            <input type="checkbox" id="food_02" name="dinnerSelect" value="치킨" />
+            <label for="food_02">치킨</label>
+          </li>
+          <li>
+            <input type="checkbox" id="food_03" name="dinnerSelect" value="피자" />
+            <label for="food_03">피자</label>
+          </li>
+          <li>
+            <input type="checkbox" id="food_04" name="dinnerSelect" value="짬뽕" />
+            <label for="food_04">짬뽕</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>체크 - other</legend>
+        <ul>
+          <li>
+            <label for="selectNum">수량을 입력하세요.</label>
+            <input type="number" id="selectNum" name="selectNum" value=""
+            min="1" max="100" step="5" />
+          </li>
+          <li>
+            <label for="soundStep">수량을 입력하세요.</label>
+            <input type="range" id="soundStep" name="soundStep" value=""
+            min="0" max="20" step="3" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>버튼</legend>
+        <ul>
+          <li>
+            <input type="submit" value="확인 및 전송" />
+          </li>
+          <li>
+            <input type="reset" value="취소" />
+          </li>
+          <li>
+            <label for="location" class="blind">지도검색</label>
+            <input type="button" id="location" name="location" value="지도검색" />
+          </li>
+          <li>
+            <!-- image는 submit기능을 이미지 버튼-->
+            <input type="image" src="../img/icon/icon.png" alt="버튼에 대한 설명" value="확인 및 전송" />
+          </li>
+          <li>
+            <label for="sendData">전송할 파일을 선택하세요.</label>
+            <input type="file" name="sendFile" id="sendData" value="" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>확장형</legend>
+        <div>
+          <label for="sendMultiText">댓글을 입력하세요.</label>
+          <textarea name="sendMultiText" id="sendMultiText" cols="30" rows="10" value=""></textarea>
+        </div>
+        <div>
+          <label for="lunch">점심 메뉴 고르세요.</label>
+          <select name="lunch" id="lunch">
+            <option>메뉴를 선택하세요.</option>
+            <option value="청국장">청국장</option>
+            <option value="된장찌개">된장찌개</option>
+            <option value="김치찌개">김치찌개</option>
+            <option value="돈가스">돈가스</option>
+            <option value="햄버거">햄버거</option>
+            <option value="다이어트">다이어트</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">확인</button>
+          <button type="reset">취소</button>
+          <button type="button">버튼</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/basic_code_21_form.js"></script> -->
+</body>
+</html>
