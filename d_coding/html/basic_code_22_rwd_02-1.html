@@ -1,0 +1,135 @@
++<!DOCTYPE html>
+<!-- html/basic_code_22_rwd_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+    <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/basic_code_22_rwd_02-1.css">
+
+  <title>웹 기초</title>
+  
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+
+    <header id="headBox">
+      <div class="headBox_innerwrap container clearfix">
+        <h1><a href="./all_contents.html">site name</a></h1>
+        <nav id="navBox">
+          <h2 class="blind">navigation</h2>
+          <div class="search_area">
+            <div class="search_open_btn">
+              <button type="button">
+                <i class="fas fa-search"></i>
+                <span class="blind">검색창 띄우기</span>
+              </button>
+            </div>  
+            <div class="search_part">
+              <form action="" method="get">
+                <fieldset>
+                  <legend>검색</legend>
+                  <label for="search">검색하세요</label>
+                  <input type="search" id="search" name="search" value=""
+                  placeholder="검색하세요" />
+                  <button type="button">
+                    
+                    <span>검색</span></button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="gnb_area">
+            <div class="gnb_btn">
+              <button type="button">
+                <i class="fas fa-minus-square"></i>
+                <span class="blind">메뉴</span></button>
+            </div>
+            <div class="gnb_nav">
+              <div class="gnb_close_btn">
+                <button type="button"><span>닫기</span></button>
+              </div>
+
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">notice</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>      
+    </header>
+
+    <section id="viewBox">
+      <h2 class="blind">광고영역</h2>
+      <div class="viewBox_innerwrap container">
+        <div class="indicator blind_wrap">
+          <ul class="clearfix">
+            <li class="act"><a href="#"><span>광고 1에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 2에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 3에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 4에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 5에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 6에 대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 7에 대한 요약설명</span></a></li>
+          </ul>
+        </div>
+
+        <div class="view_area">
+          <div class="view_guide">
+            <ul class="view_inner">
+              <li>광고 01</li>
+              <li>광고 02</li>
+              <li>광고 03</li>
+              <li>광고 04</li>
+              <li>광고 05</li>
+              <li>광고 06</li>
+              <li>광고 07</li>
+            </ul>
+          </div>
+        </div>
+      </div>    
+    </section>
+
+    <article id="contentBox">
+      <div class="title_shape"></div>
+      <div class="content_area"></div>
+    </article>
+    <article id="infoBox" class="clearfix">
+      <div class="new_area info_tablet_area info_pc_area"></div>
+      <div class="notice_area info_tablet_area info_pc_area"></div>
+      <div class="more_content info_pc_area"></div>
+    </article>
+
+    <footer id="footBox">
+      <div class="footBox_innerwrap container clearfix"></div>
+    </footer>
+    
+  </div>
+ 
+  <!-- script -->
+  <!-- <script src="../js/src/basic_code_22_rwd_02.js"></script> -->
+</body>
+</html>
