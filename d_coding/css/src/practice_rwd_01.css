@@ -1,0 +1,48 @@
+/* practice_rwd_01.css */
+
+/* ~479px -------------------------------- */
+@media screen and (max-width:479px) {
+  /* vw단위 기준 : 320px  */
+  html, body {
+    width:100%;
+    min-width:320px;
+  }
+
+  #wrap {
+    height:auto;
+    background-color: #ddd;
+  }
+
+  #headBox {
+    position: fixed; top: 0; left:50%; z-index:1500;
+    transform:translateX(-50%);
+    width:100%;
+    height: 64px; height: 4rem; height: 20vw;
+    min-height:64px;
+    padding: 10px 7px; box-sizing:border-box;
+    background-color:#555;
+  }
+
+  .headBox_innerwrap {
+    width: 100%; height: auto;
+  }
+
+  h1 {
+    float:left;
+    width:80px; height: 50px;
+    background-color:#fff;
+  }
+
+  #navBox {
+    float:right;
+    width:38px; height: 25px;
+    background-color: #fff;
+  }
+
+  /* ------- */
+
+  .gnb_area {
+    width:332px; height: 594px;
+    background-color:;
+  }
+}

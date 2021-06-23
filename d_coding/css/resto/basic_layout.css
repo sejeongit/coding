@@ -1,0 +1,163 @@
+/* 공통 1280 기준 - 구형브라우저 포함 */
+/* css/resto/basic_layout.css */
+
+
+/* #wrap ---------------------------------------- */
+#wrap {
+  --headHeight:100px;
+
+  width: 100%; height: auto;
+  min-height: 500px;
+  min-height: 31.25rem;
+  margin:auto;
+  padding-top:100px; padding-top:6.25rem; padding-top:var(--headHeight);
+  background-color:#ccc;
+  background-color:var(--color-gray1);
+}
+
+/* #headBox ------------------------------------------ */
+#headBox {
+  position:fixed; top:0; left:0; z-index:1000;
+  width:100%; height:100px; height:var(--headHeight);
+  background-color:#555;
+  background-color:var(--color-gray5);
+}
+
+.container {
+  box-sizing:border-box;
+}
+h1 {
+  float: left;
+  background-color:#fff;
+  background-color:var(--color-white);
+}
+/* #navBox ------------------------------------------- */
+#navBox {
+  float:right;
+  background-color:#fff;
+  background-color:var(--color-white);
+}
+
+
+/* #viewBox ----------------------------------------- */
+#viewBox {
+  --viewLength:3;
+
+  width: 100%; height: 920px; height: 57.5rem;
+  background-color: #777;
+  background-color: var(--color-gray4);
+}
+
+.view_area {
+  overflow:hidden;
+  width: 100%; height: 100%;
+}
+.view_area > ul {
+  width: 300%; width:calc(100% * var(--viewLength)); height: 100%;
+}
+.view_area > ul > li {
+  position:relative;
+  float:left;
+  width: 33.333333%;
+  width: calc(100% / var(--viewLength));
+  height: 100%;
+}
+.view_area > ul > li:nth-child(1){ background-color: rgb(188,7,255);}
+.view_area > ul > li:nth-child(2){ background-color: rgb(200,219,41);}
+.view_area > ul > li:nth-child(3){ background-color: rgb(234,21,74);}
+
+/* 광고영역의 틀은 늘어나지 않고 필요한 만큼 고정으로 처리하되,
+내부의 요소 (dl)는 해당하는 양에 따라 늘어나거나, 줄어들 수 있으므로
+이러한 내용들이 위 고정으로 배치가 아니라,
+위아래 가운데 배치하게 만들기 위해 ...
+*/
+.view_area dl {
+  position: absolute; left:0; right:0; top:50%;
+  width: 85%; height: auto;
+  margin:auto; transform:translateY(-50%);
+  text-align:center;
+}
+
+.view_area dt {
+  width: 100%; height: auto;
+  margin-bottom:30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size:var(--font-size3);
+  color:var(--color-white);
+}
+
+.view_area dd:first-of-type {
+  width: 100%; height: auto;
+  margin-bottom: 30px;
+  font-size:var(--font-size4);
+  color:var(--color-white);
+  text-transform: capitalize;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.view_area dd:last-of-type {
+  --btnHeight : 55px;
+  width: 70%; height: var(--btnHeight);
+  margin:auto;
+}
+
+.view_area dd a {
+  display: block;
+  width: 100%; height: 100%;
+  border-radius:var(--btnHeight);
+  background-color:var(--color-white);
+  font-size:var(--font-size3);
+  text-align:center;
+  line-height:var(--btnHeight);
+}
+
+/* #discoverBox ----------------------------------------- */
+#discoverBox {
+  width: 100%; height: 1430px;
+  background-color: #fff;
+  background-color: var(--color-white);
+}
+
+/* #guideBox ----------------------------------------- */
+#guideBox {
+  width: 100%; height: 1190px; height: 74.375rem;
+  background-color: #777;
+  background-color: var(--color-gray4);
+}
+
+/* #eventBox ----------------------------------------- */
+#eventBox {
+  width: 100%; height: 1100px; height: 68.75rem;
+  background-color: #fff; 
+  background-color: var(--color-white);
+}
+
+/* #galleryBox ----------------------------------------- */
+#galleryBox {
+  width: 100%; height: 1424px; height: 89rem;
+  background-color: #ccc;
+  background-color: var(--color-gray1);
+}
+
+/* #chefBox */
+#chefBox {
+  width: 100%; height: 630px; height: 39.375rem;
+  background-color: #aaa;
+  background-color: var(--color-gray2);
+}
+
+/* #locationBox ----------------------------------------- */
+#locationBox {
+  width: 100%; height: 640px; height: 40rem; 
+  background-color: #999;
+  background-color: var(--color-gray3);
+}
+
+/* #restoInfoBox ----------------------------------------- */
+#restoInfoBox {
+  width: 100%; height: 380px; height: 23.75rem;
+  background-color: #b27700;
+  background-color: var(--color-primary);
+}
