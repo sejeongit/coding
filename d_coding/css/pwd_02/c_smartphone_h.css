@@ -1,0 +1,123 @@
+/* pwd_02/c_smartphone_h.css */
+
+/* 480 ~ 767px ------------------------------------------ */
+@media screen and (min-width:480px) and (max-width:767px) {
+/* 가로 기준 480px */
+  #wrap{
+    height: 900px; height: 56.25rem;
+    background-color:#aca;
+  }
+  
+  #headBox {
+    position: fixed; top: 0; left: 50%; z-index:1500;
+    transform:translateX(-50%);
+    width: 100%; height: 60px; height: 3.75rem;
+    padding: 10px 1rem; box-sizing:border-box;
+    background-color: #333;
+  }
+
+  .headBox_innerwrap {
+    width: 100%; height: auto;
+  }
+
+  h1{
+    float:left;
+    width: 126px; height: 30px;
+    background-image:url("../../img/rwd_02/1x/자산\ 1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  #navBox{
+    float:right;
+    width:90px; height:40px;
+  }
+  
+  .search_area {
+    float:left;
+    width:36px; height: 40px;
+    background-image:url("../../img/rwd_02/1x/자산\ 2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  .gnb_area {
+    float:right;
+    width: 45px; height: 40px;
+    background-image:url("../../img/rwd_02/1x/자산\ 3.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  
+  /* #viewBox */
+  #viewBox {
+    width: 100%;
+    height: 720px; height: 45rem; height: 150vw;
+    padding-top: 3.75rem; box-sizing:border-box;
+    background-color: #bbaa77;
+  }
+
+  .viewBox_innerwrap {
+    width:100%; height: auto;
+    padding-top:142px; padding-bottom:64px;
+    box-sizing:border-box;
+  }
+
+  .viewBox_content {
+    width:408px; width: 85vw;
+    height: 90px; height: 18.75vw;
+    margin:auto;
+    background-color:#fff;
+    opacity: 80%;
+    margin-bottom: 30px;
+  }
+  .viewBox_content:last-child{ margin-bottom: 0;}
+
+
+  /* #contentBox */
+  #contentBox {
+    width: 100%; height: 720px;
+    height: 45rem; height: 150vw;
+    padding: 24px 16px; padding: 1.5rem 1rem; box-sizing: border-box;
+    background-color: #547d77;
+  }
+
+  .title_shape {
+    width: 192px; height: 44px;
+    width: 12rem; height: 2.75rem;
+    background-color: #33b88f;
+  }
+
+  .text_shape{
+    width: 424px; height: 600px;
+    margin-top: 24px;
+    background-color: #33b88f;
+  }
+
+
+  /* #infoBox */
+  #infoBox {
+    width: 100%; height: 720px;
+    background-color: #33b88f;
+  }
+
+  .new_area{
+    width: 100%; height: auto;
+    background-color: #957de9;
+  }
+
+  .info_shape {
+    width:192px; height: 35px;
+    background-color: #33b88f;
+  }
+
+  .notice_area, .more_content{ display: none; }
+
+  /* #footBox */
+  #footBox {
+    width: 100%; height: 60px;
+    background-color: #333;
+  }
+
+}/* @media screen and (min-width:480px) and (max-width:767px) */

@@ -1,0 +1,59 @@
+/* phone_h : 480 ~ 767 */
+/* css/resto/phone_v.css */
+  
+@media screen and (min-width:480px) and (max-width:767px) {
+  /* design 기준 : 480 */
+
+
+  /* #wrap ---------------------------------------- */
+  #wrap {
+    --headHeight:4rem;
+  }
+
+  /* #headBox ------------------------------------------ */
+  /* #headBox {} */
+  #headBox .container {
+    width: 100%; height: 100%;
+    padding:10px 20.8px 0;
+    padding:0.625rem 1.3rem 0;
+  }
+  h1 {
+    width: 80px; height: 50px;
+    width: 5rem; height: 3.125rem;
+  }
+    /* #navBox ------------------------------------------- */
+  #navBox {
+    width: 38px; height: 25px;
+    width: 2.375rem; height: 1.5625rem;
+    margin-top:16px; margin-top:1rem;
+  }
+
+
+  /* #viewBox ----------------------------------------- */
+  #viewBox {
+    height: 36.5rem;
+  }
+
+  /* #discoverBox ----------------------------------------- */
+  #discoverBox { height: 108.4375rem; }
+
+  /* #guideBox ----------------------------------------- */
+  #guideBox { height: 51.875rem; }
+
+  /* #eventBox ----------------------------------------- */
+  #eventBox { height: 147.625rem; }
+
+  /* #galleryBox ----------------------------------------- */
+  #galleryBox { height: 103.125rem; }
+
+  /* #chefBox */
+  #chefBox { height: 54.1875rem; }
+
+  /* #locationBox ----------------------------------------- */
+  #locationBox { height: 29.375rem; }
+
+  /* #restoInfoBox ----------------------------------------- */
+  #restoInfoBox { height: 47.25rem; }
+
+}  /* @media screen 480~767 */
+  

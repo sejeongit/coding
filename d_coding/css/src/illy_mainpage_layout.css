@@ -1,0 +1,675 @@
+/* css/src/illy_mainpage_layout.css */
+
+/* @media screen and (min-width:1600px) and (max-width:1919px) { */
+  #wrap {
+    position:relative;
+    width: 1600px; height: auto;
+    margin:auto;
+  }
+
+  #headBox {
+    position:absolute; top:0; left:0; z-index:1000;
+    width:100%; height:90px;
+    padding:0 220px; box-sizing:border-box; 
+    background-color:rgb(124, 124, 124, 0.5);
+  }
+
+  h1 {
+    float:left;
+    width:55px; height: 55px;
+  }
+
+  h1 > a {
+    display:block;
+    width:100%; height:100%;
+    margin:20px 0;
+    background-color:#f00;
+  }
+
+  .navBox {
+    float:right;
+    width:520px; height:40px;
+    margin-top:25px; margin-bottom:25px; 
+  }
+
+  .navBox > ul {
+    width:100%; height: 40px;
+    /* margin:auto; float과 margin:auto는 같이 쓸수 없음*/
+  }
+
+  .navBox li {
+    float:left;
+    width: auto; height: auto;
+    margin:0 7px;
+  }
+
+  /* .navBox li:first-child {
+    margin-left:0;
+  } */
+
+  .navBox li > a {
+    display:block;
+    width: 90px; height: 40px;
+    font-size:1.1rem; color:#fff;
+    text-align:center; text-transform: capitalize;
+    line-height: 40px;
+  }
+
+  .navBox li:nth-child(4) > a {
+    text-transform: uppercase;
+  }
+
+
+  #viewBox {
+    width:100%; height: 900px;
+  }
+
+  .viewBox_innerwrap {
+    position:relative;
+    width:100%; height: 100%;
+  }
+  
+  #viewBox .indicator {
+    position:absolute;
+    bottom:1.5rem; left:0; right: 0; z-index:100;
+    width: 164px; height: 26px;
+    margin:auto;
+    background-color: rgb(124, 124, 124, 0.5);
+    border-radius: 24px;
+    padding:5px 14px; box-sizing:border-box;
+  }
+
+  .indicator > ul {
+    width:100%; height: auto;
+  }
+
+  .indicator li {
+    --i-size: 16px;
+    float:left;
+    width:16px; height: 16px;
+    margin-right:14px;
+    width:var(--i-size); height: var(--i-size);
+  }
+  
+  .indicator li:last-child{ margin-right:0; }
+  
+  .indicator li a {
+    border-radius: 16px;
+    border-radius: var(--i-size);
+    background-color: #fff;
+  }
+
+  .indicator li.act a {
+    background-color: #d12420;
+  }
+
+  .view_area {
+    overflow:hidden;
+    width:100%; height: 100%;
+  }
+
+  .view_area ul {
+    width:500%; width:calc(100% * 5);
+    height: 100%;
+  }
+
+  .view_area ul > li {
+    position:relative;
+    float:left;
+    width:20%; width: calc(100% / 5);
+    height: 100%;
+  }
+
+  .view_area > ul > li:nth-child(1){ background-color: #5b3b1f; }
+  .view_area > ul > li:nth-child(2){ background-color: #805941; }
+  .view_area > ul > li:nth-child(3){ background-color: #e6ddd8; }
+  .view_area > ul > li:nth-child(4){ background-color: #d12420; }
+  .view_area > ul > li:nth-child(5){ background-color: #e60012; }
+
+  .view_area dl {
+    position:absolute; left:0; right:0; top:55%;
+    width: 70%; height:auto;
+    margin:auto; transform:translateY(-55%);
+    text-align:center;
+  }
+
+  .view_area dt {
+    width:100%; height: auto;
+    margin-bottom:80px;
+    font-size:25pt;
+    color: #fff;
+  }
+
+  .view_area dd:first-of-type {
+    width:100%; height: auto;
+    margin-bottom: 80px;
+    font-size: 16pt;
+    color: #fff;
+  }
+
+  .view_area dd:last-of-type {
+    width:170px; height: 40px;
+    margin:auto;
+  }
+
+  .view_area dd > a {
+    display:block;
+    width:100%; height: 100%;
+    /* border-radius: 40px; */
+    background-color:#fff;
+    font-size:1.1rem;
+    text-align:center;
+    line-height: 36px;
+  }
+
+  /* #viewBox -------------------------------------------------  */
+  
+  #introBox {
+    width:100%; height:900px;
+    padding:150px 0; box-sizing: border-box;
+    background-color:#fff;
+  }
+
+  .introBox_innerwrap {
+    position:relative;
+    width:100%; height: 100%;
+  }
+
+  .introBox_innerwrap > h3 {
+    width: 100%; height: auto;
+    font-size:2.5rem; color:#d12420;
+    text-align: center;
+    text-transform:capitalize;
+  }
+
+  .intro_part {
+    position:absolute; left:0; top:50%;
+    width:100%; height: auto;
+    transform:translateY(-50%);
+  }
+  
+  .intro_photo {
+    position:relative; z-index:1;
+    float:right;
+    width: 530px; height: 380px;
+    margin-top:50px;
+    background-color: #777;
+  }
+  .intro_photo_box { 
+    position:absolute; right:0; top:20%;
+    float:right;
+    width: 568px; height: 376px;
+    border:2px solid #d12420; box-sizing: border-box;
+    border-right: 0;
+  }
+
+  .intro_part > dl {
+    float:left;
+    width:580px; height: auto;
+    margin-top: 70px; margin-left:250px;
+  }
+
+  .intro_part dt {
+    width: 100%; height: auto;
+    font-size:1.3rem; font-weight: 600;
+  }
+
+  .intro_part dd:first-of-type {
+    width: 100%; height: auto;
+    margin-top:30px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .intro_part dd:last-of-type {
+    width:170px; height: 40px;
+    margin-top: 50px;
+  }
+
+  .intro_part dd > a {
+    display:block;
+    width:100%; height: 100%;
+    /* border-radius: 40px; */
+    background-color:#d12420;
+    font-size:1.1rem; color:#fff;
+    text-align:center;
+    line-height: 36px;
+  }
+
+  /* #introBox -------------------------------------------------  */
+
+  #qualityBox {
+    width:100%; height:900px;
+    padding:140px 0; box-sizing: border-box;
+    background-color: #eaeaea;
+  }
+
+  .qualityBox_innerwrap {
+    position:relative;
+    width:100%; height: 100%;
+  }
+
+  .qualityBox_innerwrap > h3 {
+    width: 100%; height: auto;
+    margin-bottom:50px;
+    font-size:30pt; color:#d12420;
+    text-align: center;
+    text-transform:capitalize;
+  }
+
+  .quality_area {
+    overflow:hidden;
+    width:950px; height: 460px;
+    margin-top: 70px;
+    margin:auto;
+  }
+
+  .quality_area > ul {
+    width: 700%; height: 100%;
+  }
+
+  .quality_area li {
+    float:left;
+    width: 950px; height: 460px;
+  }
+  
+  .quality_part {
+    /* position:relative; z-index:1; */
+    width:950px; height: 460px;
+    padding:100px 50px 30px 50px; box-sizing: border-box;
+    background-color:#fff;
+  }
+
+  .quality_part_left {
+    float:left;
+    width:350px; height: auto;
+  }
+  
+  .quality_photo {
+    width:220px; height: 220px;
+    background-color:#777;
+    border-radius: 200px;
+  }
+
+  .quality_part_left p {
+    width:20%; height: auto;
+    margin-top:80px; margin-left: 20px;
+  }
+
+  .quality_part_right {
+    float:right;
+    width:500px; height: auto;
+  }
+
+  .quality_part_right > dl {
+    float:right;
+    width:100%; height: auto;
+    margin-top: 10px;
+  }
+
+  .quality_part_right dt {
+    width: 100%; height: auto;
+    margin-bottom: 30px;
+    font-size: 1.5rem; font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .quality_part_right dd {
+    width: 100%; height: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .quality_part_right .quality_view_button {
+    float:right;
+    width:80px; height: auto;
+    margin-top:80px;
+  }
+
+  .next_btn {
+    float:right;
+    width:40px; height: 30px;
+    background-color: #d12420;
+    color:#fff; 
+    font-size:1.2rem; font-weight:500;
+  }
+
+  .prev_btn{
+    float:left;
+    width:40px; height: 30px;
+    background-color: #d12420;
+    color:#fff; 
+    font-size:1.2rem; font-weight:500;
+  }
+
+  /* 사진과 페이지를 한박스로 묶고 글과 버튼을 한박스로 묶어서
+  박스들을 float 처리할것
+  페이지는 포지션 */
+
+  /* .quality_part_box {
+    position:absolute; top:23%; right:290px;
+    width:950px; height: 460px;
+    border:2px solid #d12420; box-sizing: border-box;
+  } */
+
+
+  /* #qualityBox -------------------------------------------------  */
+
+  #contentBox {
+    width:100%; height: 1600px;
+    padding:140px 310px; box-sizing: border-box;
+    background-color:#fff;
+  }
+
+  .contentBox_innerwrap {
+    width: 100%; height: 100%;
+  }
+
+  .contentBox_innerwrap > h3 {
+    width: 100%; height: auto;
+    font-size:2.5rem; color:#d12420;
+    text-align: center;
+    text-transform:capitalize;
+  }
+
+  .content_part_first {
+    width: 100%; height: 500px;
+    margin-top: 70px;
+  }
+
+  .content_part_first .first_photo {
+    float: right;
+    width:360px; height: 340px;
+    margin-top: 80px;
+    background-color: #333;
+  }
+
+  .content_part_first dl {
+    float:left;
+    width: 420px; height: auto;
+    margin-top: 150px;
+  }
+
+  .content_part_first dt {
+    width:100%; height: auto;
+    margin-bottom: 40px;
+    font-size:1.6rem; font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .content_part_first dd {
+    width:100%; height: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+  .content_part_second {
+    width: 100%; height: 500px;
+    margin-top: 50px;
+  }
+
+  .content_part_second dl {
+    float:right;
+    width: 420px; height: auto;
+    margin-top: 150px;
+  }
+
+  .content_part_second dt {
+    width:100%; height: auto;
+    margin-bottom: 40px;
+    font-size:1.6rem; font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .content_part_second dd {
+    width:100%; height: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .content_part_second .second_photo {
+    float: left;
+    width:360px; height: 340px;
+    margin-top: 80px;
+    background-color: #333;
+  }
+
+  .contentBox_innerwrap .btn {
+    width:170px; height: 40px;
+    margin:auto; margin-top: 80px;
+  }
+
+  .contentBox_innerwrap a {
+    display:block;
+    width:100%; height: 100%;
+    background-color:#d12420;
+    font-size:1.1rem; color:#fff;
+    text-align:center;
+    line-height: 36px;
+  }
+
+  /* #contentBox -------------------------------------------------  */
+
+  #productBox {
+    --productLength:10;
+
+    width:100%; height:1300px;
+    background-color:#fff;
+  }
+
+  .titleBox {
+    width: 100%; height: 400px;
+    padding:80px 0px; box-sizing: border-box;
+    background-color:#444;
+  }
+  
+  .title_innerBox {
+    width:1160px; height: 240px;
+    margin:auto;
+    padding:90px 0px; box-sizing: border-box;
+    border:2px solid #fff;
+  }
+  
+  .title_innerBox > h3 {
+    width: 100%; height: auto;
+    font-size:2.5rem; color:#fff;
+    text-align: center;
+    text-transform:capitalize;
+  }
+
+  /* // titleBox ------------------- */
+
+
+  .product_area {
+    width: 100%; height: 800px;
+    margin:auto; margin-top: 50px;
+  }
+
+  .product_list {
+    overflow:hidden;
+    width: 1160px; height: 600px;
+    margin:auto; margin-top: 50px;
+  }
+
+  .product_list ul {
+    width: 1100%; width:calc(100% * (var(--productLength)+1));
+    height: 100%;
+  }
+
+  .product_list li {
+    float: left;
+    width:360px; height: 100%;
+    margin-left: 40px;
+  }
+
+  .product_list li:first-child {
+    margin-left: 0;
+  }
+
+  .product_list li > div {
+    width:360px; height: 340px;
+    background-color: #333;
+  }
+
+  .product_list dl {
+    width:100%; height: auto;
+    margin-top:30px;
+  }
+
+  .product_list dt {
+    width:100%; height: auto;
+    font-size: 1.2rem; font-weight: 600;
+    text-align:center;
+  }
+
+  .product_list dd:first-of-type {
+    width:100%; height: auto;
+    margin-top: 16px;
+    font-size: 1.1rem; font-weight: 500;
+    text-align: center;
+  }
+
+  .product_list dd:last-of-type {
+    width:90%; height: auto;
+    margin:auto; margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+
+  .product_area .btn {
+    width:100%; height: 40px;
+    margin-top: 50px;
+    text-align:center;
+  }
+
+  .product_area .btn a {
+    display:inline-block;
+    width:170px; height: 100%;
+    background-color:#d12420;
+    font-size:1.1rem; color:#fff;
+    text-align:center;
+    line-height: 36px;
+  }
+
+  /* #productBox -------------------------------------------------  */
+
+  #snsBox {
+    --snsLength:10;
+
+    width:100%; height:800px;
+    padding:140px 0; box-sizing: border-box;
+    background-color:#777;
+  }
+
+  .sns_innerwrap {
+    width: 100%; height: 100%;
+  }
+
+  .sns_innerwrap > h3 {
+    width: 100%; height: auto;
+    margin-bottom:60px;
+    font-size:2.5rem; color:#d12420;
+    text-align: center;
+    text-transform:capitalize;
+  }
+
+  .sns_photo {
+    overflow:hidden;
+    width:100%; height: 300px;
+  }
+
+  .sns_photo > ul {
+    width:3300px; width:calc(300px * (var(--snsLength) + 1)); height: 300px;
+  }
+
+  .sns_photo > ul > li {
+    float:left;
+    width:300px;
+    height: 300px;
+    margin-left:25px;
+    background-color:#333;
+  }
+
+  .sns_photo li:first-child {
+    margin-left:0;
+  }
+
+  .sns_view_btn {
+    width: 430px; height: auto;
+    margin:auto; margin-top:25px;
+  }
+
+  .sns_view_btn > button {
+    width:40px; height: 40px;
+    background-color: #d12420;
+    color:#fff; 
+    font-size:1.3rem; font-weight:500;
+  }
+
+  /* #snsBox -------------------------------------------------  */
+
+  #footBox {
+    width:100%; height:420px;
+    padding:70px 250px; box-sizing: border-box;
+    background-color:#333;
+  }
+  
+  #footBox .logo {
+    width:50px; height: 50px;
+    margin:auto;
+  }
+  
+  #footBox .logo > a {
+    display:block;
+    width:100%; height:100%;
+    background-color:#fff;
+  }
+  
+  .footBox_innerwrap {
+    width: 100%; height: 270px;
+    margin-top: 60px;
+  }
+
+  .info_part {
+    float:left;
+    width: 600px; height: auto;
+  }
+
+  .info_part > p {
+    color:#fff; font-size:0.9rem; font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .sns_part {
+    float:right;
+    width: 120px; height: auto;
+  }
+
+  .sns_part h4 {
+    width: 100%; height: auto;
+    font-size: 1.2rem; color:#fff; font-weight: 500;
+    text-align: center; text-transform: capitalize;
+  }
+
+  .sns_part > div {
+    width: 100%; height: auto;
+    margin: auto; margin-top:30px;
+  }
+
+  .sns_part > .cs {
+    width: 100px; height: 32px;
+  }
+
+  .sns_part > .cs > a {
+    display:block;
+    width: 100%; height: 100%;
+    border:1px solid #fff;
+    color:#fff;
+    font-size:0.9rem; text-align:center;
+    line-height: 32px;
+  }
+
+  /* #footBox -------------------------------------------------  */
+

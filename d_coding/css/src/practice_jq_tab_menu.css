@@ -1,0 +1,45 @@
+/* css/src/practice_jq_tab_menu.css */
+
+#wrap {
+  width:100%; height: auto;
+  margin:auto;
+}
+
+.tab_first {
+  width: 60%; height: auto;
+}
+
+.tab_first > li {
+  float: left;
+  width:100px; height: auto;
+}
+
+.tab_first > li > button {
+  width:100%; height: auto;
+  background-color:#aff;
+};
+
+.tab_second {
+  width: 100%; height: auto;
+}
+
+.tab_second > li {
+  float: left;
+  width:100px; height: auto;
+}
+
+.tab_second > li > button {
+  width:100%; height: auto;
+  background-color: #fdd;
+};
+
+.content {
+  width: 100%; height: auto;
+}
+
+.content li {
+  display:none;
+  float:left;
+  width:100px; height: auto;
+  background-color:#ddd;
+}

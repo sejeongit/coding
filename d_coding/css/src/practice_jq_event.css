@@ -1,0 +1,11 @@
+/* css/src/practice_jq_event.css */
+
+ul {
+  width:60%; height: auto;
+  
+}
+
+.btn li {
+  width:100%; height: 50px;
+  background-color:#ddd;
+}
