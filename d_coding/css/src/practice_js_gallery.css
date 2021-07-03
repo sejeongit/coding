@@ -1,0 +1,43 @@
+/* practice_js_gallery.css */
+
+.part {
+  width:550px; height: 500px;
+}
+
+.big_img {
+  width:100%; height: 500px;
+  margin: 10px;
+  border: 1px solid #777; box-sizing: border-box;
+}
+
+.list_img {
+  width:550px; height: auto;
+  background-color: #fff;
+}
+
+.list_img ul {
+  width: 100%; height: auto;
+}
+
+.list_img li {
+  float:left;
+  width: 100px; height: 100px;
+  margin-left: 10px;
+  border: 1px solid #777; box-sizing: border-box;
+}
+
+.list_img li a {
+  display: block;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: all 300ms ease;
+}
+
+.list_img li a:hover {
+  background-position:50% 100%;
+}
+.list_img li a.act {
+  outline:4px solid #aff;
+}
