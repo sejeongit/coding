@@ -1,0 +1,199 @@
+/* js_014_gallery_02.css */
+
+.part{
+  border-bottom:2px solid #333;
+  margin-top:100px;
+}
+
+h2 {
+  text-align: center; padding: 10px;
+}
+
+.gallery {
+  position: relative;
+  width: 400px; height: auto;
+  margin: auto; margin-top: 30px;
+  padding:10px; padding-bottom:100px;
+}
+
+.big_image {
+  position: relative;
+  width:100%; height: 400px;
+  margin:10px auto; 
+}
+
+.big_content{
+  position:absolute; top:0; left:0;
+  z-index: 0;
+  width: 100%; height: 100%;
+  border-radius:5px;
+  border:1px solid #777;
+  box-sizing:border-box;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 50% 50%;
+}
+
+.big_content.act{ z-index:100; }
+.big_narr_01{ background-color: #fa0a; }
+.big_narr_02{ display:none; background-color: #0afa; }
+
+.thumbnail {
+  position:absolute;
+  bottom:10px; left:0; right:0;
+  margin:auto;
+  width:100%; height:80px;
+  padding:10px 20px; box-sizing: border-box;
+}
+
+.thumbnail li {
+  float:left; width: 60px; height: 60px;
+  margin-left:15px;
+}
+
+.thumbnail li:first-child { margin-left:0; }
+
+.thumbnail li a {
+  position:relative;
+  background-image: url("../../img/gallery_02/mini/agenlaku.jpg");
+  background-size:100%;
+  transition:all 1000ms linear;
+}
+
+.thumbnail li a:before,
+.thumbnail li a::before {
+  content:""; display:block;
+  position: absolute; top:0; left:0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 50ms ease;
+}
+
+
+.thumbnail li a:focus { background-size: 120%; }
+.thumbnail li a:hover { box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+.thumbnail li.act a { border: 2px solid #0a0; }
+.thumbnail li a:hover:before,
+.thumbnail li a:hover::before,
+.thumbnail li a:focus:before,
+.thumbnail li a:focus::before {
+  background-color: rgba(255,255,255,0);
+}
+
+/* .modal ------------------------------------------------- */
+
+#wrap {
+  padding-bottom:1000px;
+}
+
+.modal {
+  position:relative;
+  width: 700px; height:auto; min-height: 60px;
+  margin:auto; margin-top: 100px;
+  background-color: #efefef;
+}
+
+/* 모달 버튼영역 */
+.list_slide_btn{
+  position:absolute; top:50%; left:50%; transform:translateX(-50%);
+  width:calc(100% + 100px); height: 0;
+}
+.list_slide_btn button{
+  width:40px; height: 40px; background-color:#07a;
+  transform:translateY(-50%);
+  border-radius: 100%; color:#fff;
+}
+
+.next_btn{ float:right; }
+.prev_btn{ float:left; }
+
+/* 모달 썸네일 리스트 영역 */
+.modal_list {
+  width:80%; height:auto; min-height:80px;
+  margin:auto; padding:10px;
+  border:1px solid #777;
+  box-sizing:border-box;
+}
+
+.modal_list ul{
+  width:100%; height:auto; min-height:60px;
+}
+
+.modal_list li {
+  float:left;
+  width:60px; height:60px;
+  margin-right:15px;
+  border:1px solid #04f;
+}
+
+/* .modal_list li:nth-child(7n){ margin-right:0; } */
+.modal_list li:last-child{ margin-left:0; }
+.modal_list li a {
+  display:block; width: 100%; height: 100%;
+  font-size:1rem; word-break:break-all;
+  text-indent:-9999px; overflow:hidden;
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-size:cover;
+}
+
+.modal_view {
+  display:none;
+  position:fixed; z-index:2000;
+  top:0; left:0; right:0; bottom:0;
+  width:100%; height:100%;
+  margin:auto;
+  /* transition:all 1000ms linear; */
+  overflow:hidden;
+}
+/* .modal_view.act {
+  width:0; height: 0;
+} */
+
+.front_board {
+  position:absolute;
+  top:0; bottom:0; right:0; left:0; margin:auto;
+  width:70%; min-width:700px; height:400px;
+  padding:20px; box-sizing: border-box;
+  border:10px solid #fff;
+  background-color:#aaa;
+  border-radius: 5px;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.close_btn {
+  position:absolute;
+  right: -20px; top: -20px;
+  width:40px; height:40px;
+}
+.close_btn button {
+  width: 100%; height: 100%;
+  background-color:#05a;
+  color:#fff;
+  border-radius:100%;
+  box-shadow:2px 2px 3px rgba(255,255,255,0.3) inset;
+}
+.close_btn button:focus {
+  background-color:#f03;
+  font-weight:700;
+}
+
+.modal_content {
+  width:100%; height: 100%;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #fda;
+}
+
+.back_board {
+  width:100%; height:100%;
+  background-color:rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.back_board:hover {
+  background-color:rgba(0,0,0,0.25);
+}
+
+
+.gallery { display:none; }
