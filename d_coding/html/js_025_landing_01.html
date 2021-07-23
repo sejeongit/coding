@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- html/js_025_landing_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_025_landing_01.css">
+
+  <title>웹 기초</title>
+  
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div class="info">
+      <h1><a href="./all_contents.html">웹표준</a></h1><hr />
+      <h2>landing웹 구현</h2>
+      <p>스크롤이나 마우스의 움직임에 의해 일정위치에서 기능이 구현되는 효과</p>
+      <ul>
+        <li>1. scroll 이벤트</li>
+        <li>2. 이미지가 나타나는 방법 opacity 0~1</li>
+        <li>3. 나타나는 것을 효과를 좀더 풍부하기위해서는 transform:translate() || margin-top || top</li>
+        <li>4. 나타나는 시점은 화면상의 하단에서부터 약 1/3 ~ 1/4 에서 나타나야 자연스럽다.</li>
+      </ul>
+      <hr />
+      <div class="narr">
+      <h2>mousewheel 처리</h2>
+        <p>firefox에서는 DOMMouseScroll 이벤트를 가지고, 이외는 mousewheel 이벤트를 가진다.</p>
+        <p>이때, 수지는 DOMMouseScroll에서는 -3/3의 수치를 가지고, mousewheel에서는 120/-120의 값을 가지고 있다.</p>
+        <p>그렇기에 둘의 동일한 수치를 만들고 이를 수행할 수 있도록 처리</p>
+      </div>
+  </div>
+
+    <div class="part">
+      <h3>리스트 형식 내용</h3>
+      <!-- ul>li*4>(.img_box+dl>dt{title}+dd{lorem15}+dd>a[href="#"]{내용 자세히보기}) -->
+      <ul>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_1</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_2</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_3</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_4</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  
+</div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_025_landing_01.js"></script>
+  <script src="../js/src/js_025_mousewheel.js"></script>
+</body>
+</html>

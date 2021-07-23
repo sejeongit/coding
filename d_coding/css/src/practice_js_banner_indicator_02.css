@@ -1,0 +1,83 @@
+/* practice_js_banner_indicator_02.css */
+
+#wrap {
+  width:100%; min-width:1280px; max-width:1920px;
+  height:auto;
+  margin:auto;
+  padding-bottom:31.25rem;
+}
+
+/* banner 광고배너 영역 큰 틀 세팅 */
+.banner {
+  position:relative;
+  width:100%; max-width:1600px; height:auto;
+  margin:auto; margin-top:1rem;
+  background-color:#ccc;
+}
+
+/* h2{
+  width:100%; height:100%;
+  padding:1rem; box-sizing:border-box;
+  font-size:1.5rem; margin-bottom:1rem;
+  text-align:center;
+} */
+
+/* indicator */
+.indicator {
+  position:absolute; left:0; right:0; bottom:1rem;
+  text-align:center;
+  width:100%; height:auto;
+  /* background-color:#fdd; */
+  margin:auto;
+}
+
+.indicator ul {
+  display:inline-block;
+  width:auto; height:auto;
+  padding:0.3rem;
+  margin-bottom: 1rem;
+}
+
+.indicator li {
+  display:inline-block;
+  width:100px; height:5px;
+  margin-right:1rem;
+  transition:all 200ms ease;
+}
+
+.indicator li:last-child { margin-right:0; }
+.indicator li a {
+  display:block;
+  width:100%; height:100%;
+  background-color:#fff;
+}
+
+.indicator li.act a { background-color:#0813C0; }
+.indicator li a:hover { box-shadow: 0.2rem 0.2rem 0.2rem rgba(10,10,10,0.7); }
+.indicator li a:focus { outline:0; border:3px solid #afa; }
+
+/* view_area */
+.view_area {
+  overflow:hidden;
+  width:100%; height:100%;
+  margin:auto;
+}
+
+.view_area ul {
+  width:500%; height:700px;
+  background-color: #aaa;
+}
+
+.view_area li {
+  float:left;
+  width: calc(100% / 5); height:100%;
+  padding: 100px 50px; box-sizing: border-box;
+  font-size:3rem; font-weight:600;
+  color:#fff;
+}
+
+#viewSelect_01 { background-color: #9F7F48;}
+#viewSelect_02 { background-color: #27EB72;}
+#viewSelect_03 { background-color: #621D5F;}
+#viewSelect_04 { background-color: #8D766C;}
+#viewSelect_05 { background-color: #418C13;}

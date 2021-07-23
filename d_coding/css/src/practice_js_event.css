@@ -1,0 +1,13 @@
+/* practice_js_event.css */
+
+#wrap {
+  width:100%; max-width: 1600px; height:auto;
+  margin:auto;
+  padding: 20px; box-sizing:border-box;
+}
+
+.window {
+  width:800px; height:600px;
+  margin:auto;
+  background-color:#ddd;
+}

@@ -1,0 +1,8 @@
+/* a_basic_content.css */
+
+/* 기본형 틀 */
+#wrap {
+  width:100%; min-width:1200px; height:auto; min-height:500px;
+  margin:auto; background-color:#ddd;
+  /* 1280px은 옆 스크롤바 등을 빼고 사실상 1200px부터 시작해야 */
+}

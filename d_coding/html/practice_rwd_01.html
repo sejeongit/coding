@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- html/practice_rwd_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+    <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/practice_rwd_01.css">
+  
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <div class="headBox_innerwrap container clearfix">
+        <h1><a href="#"><span class="blind">logo</span></a></h1>
+        <nav id="navBox">
+          <h2 class="blind">navigation button</h2>
+            <div class="gnb_open_btn">
+              <button type="button">
+                <span class="blind">네비게이션 띄우기</span>
+              </button> 
+            </div>
+          </div>
+
+          <div class="gnb_area">
+            <h2 class="blind">gnb area</h2>
+            <div class="gnb_close_btn">
+              <button type="button"><span class="blind">닫기</span></button>
+            </div>
+            <div class="gnb_nav"></div>
+            <div class="sns"></div>
+          </div>
+        </nav>
+      </div>  
+    </header>
+
+    <section id="viewBox" class="container">
+      <h2 class="blind">광고영역</h2>
+      <div class="viewBox_innerwrap container">
+        <div class="indicator blind_wrap">
+          <ul class="clearfix">
+            <li><a href="#"><span class="blind">광고 1에 대한 요약 설명</span></a></li>
+            <li><a href="#"><span class="blind">광고 2에 대한 요약 설명</span></a></li>
+            <li><a href="#"><span class="blind">광고 3에 대한 요약 설명</span></a></li>
+          </ul>
+        </div>
+
+        <div class="view_area">
+          <dl>
+            <dt>광고 헤드라인</dt>
+            <dd>광고 요약설명</dd>
+          </dl>
+          <div class="link_btn">
+            <a href="#">더보기</a>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <article id="listBox">
+      <h2 class="blind">리스트 영역</h2>
+      <div class="listBox_innerwrap container">
+        <div class="slide_banner_wrap">
+          <ul class="silde_banner">
+            <li class="slide_banner_01">
+              <dl>
+                <dt>제목</dt>
+                <dd>내용</dd>
+              </dl>
+            </li>
+            <li class="slide_banner_02">
+              <dl>
+                <dt>제목</dt>
+                <dd>내용</dd>
+              </dl>
+            </li>
+            <li class="slide_banner_03">
+              <dl>
+                <dt>제목</dt>
+                <dd>내용</dd>
+              </dl>
+            </li>
+          </ul>
+          <button type="button"><span class="blind">prev</span></button>
+          <button type="button"><span class="blind">next</span></button>
+        </div>
+
+        <div class="slide_circle_wrap">
+          <p>title</p>
+          <ul class="slide_circle">
+            <li class="slide_circle_01">
+              <div><span class="blind">이미지</span></div>
+              <p>내용</p>
+            </li>
+            <li class="slide_circle_02">
+              <div><span class="blind">이미지</span></div>
+              <p>내용</p>
+            </li>
+            <li class="slide_circle_03">
+              <div><span class="blind">이미지</span></div>
+              <p>내용</p>
+            </li>
+            <li class="slide_circle_04">
+              <div><span class="blind">이미지</span></div>
+              <p>내용</p>
+            </li>
+          </ul>  
+          <button type="button"><span class="blind">prev</span></button>
+          <button type="button"><span class="blind">next</span></button>
+        </div>
+      </div>  
+    </article>  
+
+      <article id="formBox">
+        <div class="formBox_innerwrap container">
+          <h2 class="blind">online booking</h2>
+          <div class="open_time">
+            <dl>
+              <dt>open time</dt>
+              <dd>시간</dd>
+            </dl>
+          </div>
+          <form action="" method="post">
+            <fieldset>
+              <legend><span class="blind">온라인 예약</span></legend>
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <label for="text"></label>
+              <input type="text" id="text" name="text" value=""
+              placeholder="입력" />
+              <button type="submit">book now</button>
+            </fieldset>
+          </form>
+         </div>  
+        </article>
+
+      <article id="contentBox">
+        <div class="contentBox_innerwrap container"></div>
+      </article>
+
+      <article id="listBox2">
+        <div class="listBox2_innerwrap container"></div>
+      </article>
+      <article id="infoBox">
+        <div class="infoBox_innerwrap container"></div>
+      </article>
+      <footer id="footBox">
+        <div class="footBox_innerwrap container"></div>
+      </footer>
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/practice_rwd_01.js"></script> -->
+</body>
+</html>

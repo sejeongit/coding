@@ -1,0 +1,52 @@
+/* jq_006_mouseck_xy.css */
+
+#wrap {
+  width:800px; height:auto;
+  margin:auto;
+  padding-top:100px;
+  padding-bottom:1500px;
+}
+
+ol {
+  width: 100%; height:auto;
+  margin-bottom:1rem;
+  padding: 2rem; box-sizing: border-box;
+}
+
+li { list-style: decimal; padding:0.5rem 0;}
+
+.part {
+  width:600px; height:auto;
+  padding:1rem;
+  margin:auto;
+  background-color:#ddd;
+  border-radius:0.3rem;
+}
+
+.area {
+  position:fixed; 
+  top:0; right:0; bottom:0; left:0; margin:auto;
+  width: 600px; height: 500px;
+  border:1px solid #777;
+  box-sizing:border-box;
+  padding:3rem;
+  background-color:#fff;
+}
+
+/* 앞에 빈 박스를 덧씌워 내용 못만지게 */
+.area:before {
+  content:""; display:block;
+  position:absolute;
+  top:0; left:0; width:100%; height:100%;
+  background-color:transparent;
+} 
+
+.area p { font-size:1.3rem;}
+.area dl { 
+  margin-top:0.2rem;
+  font-size:1.1rem; color:#037;
+  line-height:1.5; }
+
+.check_type,
+.check_x,
+.check_y { font-weight:700; color:#f06;}
