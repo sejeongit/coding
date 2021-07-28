@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- html/js_024_parallax.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_024_parallax_01.css">
+
+  <title>웹 기초</title>
+  
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div class="info">
+      <h1><a href="./all_contents.html">웹표준</a></h1><hr />
+
+      <h2>parallax웹 구현</h2>
+      <p>스크롤이나 마우스의 움직임에 의해 시차를 느끼게 만드는 효과</p>
+
+      <ul>
+        <li>1. event - scroll</li>
+        <li>2. background-position: 0~100%</li>
+        <li>3. 화면의 하단(시작부분) 상단에 있는 영역(끝부분)</li>
+        <li>4. 화면의 영역을 0~100%로 구분하는 방법</li>
+      </ul>
+    </div>
+
+    <div class="part">
+      <h3>리스트 형식 내용</h3>
+      <!-- ul>li*4>(.img_box+dl>dt{title}+dd{lorem15}+dd>a[href="#"]{내용 자세히보기}) -->
+      <ul>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_1</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_2</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_3</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_4</dt>
+            <dd>lorem15</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+
+    <div class="part2">
+      <h3>외부 파일기능과 유사하게 따라만들기</h3>
+      <p>참조주소 : https://delassus.com/en/about</p>
+
+      <ul>
+        <li>
+          <div class="img_box">
+            <div class="position_img"></div>
+            <span class="blind">사이트에서 사용한 이미지</span>
+          </div>
+          <dl>
+            <dt>제목</dt>
+            <dd>내용</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box">
+            <div class="position_img"></div>
+            <span class="blind">사이트에서 사용한 이미지</span>
+          </div>
+          <dl>
+            <dt>제목</dt>
+            <dd>내용</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box">
+            <div class="position_img"></div>
+            <span class="blind">사이트에서 사용한 이미지</span>
+          </div>
+          <dl>
+            <dt>제목</dt>
+            <dd>내용</dd>
+          </dl>
+        </li>
+      </ul>
+
+
+    </div>
+
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_024_parallax_01.js"></script>
+  <!-- <script src="../js/src/js_024-1_why.js"></script> -->
+  <script src="../js/src/js_024_parallax_02.js"></script>
+</body>
+</html>
