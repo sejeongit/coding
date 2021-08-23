@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- html/test_banner_indicator.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <!-- <link rel="stylesheet" href="../css/base/common.css"> -->
+  <link rel="stylesheet" href="../css/src/test_banner_indicator.css">
+
+  <title>웹 기초</title>
+  
+</head>
+<body>
+  <!-- layout -->
+<div id="wrap">
+  <h1 class="blind">test_banner_indicator</h1>
+
+  <div id="miniProduct">
+    <h2 class="blind">인디케이터 처리 광고배너</h2>
+    <div class="indicator">
+      <ul class="clearfix blind_wrap">
+        <li class="act"><a href="#view_01"><span>제품 01</span></a></li>
+        <li><a href="#view_02"><span>제품 02</span></a></li>
+        <li><a href="#view_03"><span>제품 03</span></a></li>
+      </ul>
+    </div>
+
+    <div class="product">
+      <ul class="clearfix">
+        <li id="view_01"><span class="blind">상품설명 01</span></li>
+        <li id="view_02"><span class="blind">상품설명 02</span></li>
+        <li id="view_03"><span class="blind">상품설명 03</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/test_banner_indicator.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "node_set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "server": "browser-sync start --server --watch --files \"**/*.*\" ",
+    "jsbuild": "babel src -d dist -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.14.9"
+  }
+}
